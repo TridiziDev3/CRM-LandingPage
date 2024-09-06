@@ -1,247 +1,318 @@
 /* .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.2vw;
-  }
-  
-  .card {
-    position: relative;
-    width: 30vw;
-    height: 40vw;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 3;
-  }
-  
-  .text-overlay h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white; 
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: 0% 100%; 
-    transition: background-size 1s ease-in-out, color 1s ease-in-out;
-  }
-  
-  .mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: width 1s ease-in-out;
-    z-index: 2;
-  }
-  
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 1;
-  }
-  
-  .card1 .text-overlay h2 {
-    background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
-  }
-  
-  .card1 .mask {
-    background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
-  }
-  
-  .card2 .text-overlay h2 {
-    background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
-  }
-  
-  .card2 .mask {
-    background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
-  }
-  
-  .card3 .text-overlay h2 {
-    background: linear-gradient(135deg, #FF8C00 0%, #FF00FF 100%);
-  }
-  
-  .card3 .mask {
-    background: linear-gradient(135deg, #FF8C00 0%, #FF00FF 100%);
-  }
-  
-  .card4 .text-overlay h2 {
-    background: linear-gradient(120deg, #8A2BE2 0%, #4B0082 100%);
-  }
-  
-  .card4 .mask {
-    background: linear-gradient(120deg, #8A2BE2 0%, #4B0082 100%);
-  }
-  
-  .card5 .text-overlay h2 {
-    background: linear-gradient(90deg, #FF6347 0%, #FFD700 100%);
-  }
-  
-  .card5 .mask {
-    background: linear-gradient(90deg, #FF6347 0%, #FFD700 100%);
-  }
-
-  .card.shrink .mask {
-    width: 0%;
-  }
-  
-  .card.shrink .background-image {
-    opacity: 1;
-  }
-  
-  .card.shrink .text-overlay h2 {
-    color: transparent; 
-    background-size: 100% 100%;
-  }
-   */
-
-
-
-
-   /* Common Styles */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.3vw;
 }
 
 .card {
-    position: relative;
-    width: 30vw;
-    height: 40vw;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
+  position: relative;
+  width: 30vw;
+  height: 40.45vw;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
 }
 
-/* Common Text Overlay Style */
 .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 3;
-    pointer-events: none; /* Prevent interaction with text overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.text-overlay h2 {
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: white;
+  background-size: 10% 100%;
+  transition: background-size 1s ease-in-out;
+  padding: 0.5vw;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 1s ease-in-out;
+  z-index: 2;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.text {
+  color: white;
+}
+
+.text1 {
+  background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card1 .mask {
+  background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
+}
+
+.text2 {
+  background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card2 .mask {
+  background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
+}
+
+.text3 {
+  background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card3 .mask {
+  background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
+}
+
+.text4 {
+  background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card4 .mask {
+  background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
+}
+
+.text5 {
+  background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card5 .mask {
+  background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
+}
+
+.card.shrink .mask {
+  width: 10%;
+}
+
+.card.shrink .background-image {
+  opacity: 1;
+}
+
+.card.shrink .text-overlay h2 {
+  background-size: 100% 100%;
+}
+
+.border_box {
+  border: 2px solid white;
+  position: absolute;
+  top: 37vw;
+  left: 16vw;
+  border-radius: 50%;
+  padding: 0.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.border_box img {
+  width: 1.7vw;
+  height: 1.7vw;
+} */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vw;
+}
+
+.card {
+  position: relative;
+  width: 30vw;
+  height: 40.4vw;
+  overflow: hidden;
+  transition: all 2s ease-in-out; /* Smooth transition for hover */
+  background-color: transparent; /* Optional to remove any background flickering */
+}
+.logo_container{
+  display: flex;
+}
+.contact_box{
+  margin-left: 53vw;
+}
+.contact_box >p{
+  font-size: 1.8vw;
+  color: violet;
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  pointer-events: none;
+  transition: opacity 2s ease-in-out; /* Smooth text overlay opacity */
 }
 
 /* Text Style */
 .text-overlay h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white; /* Ensure text is transparent initially */
-    background-size: 10% 100%; /* Gradient moves up to 10% */
-    transition: background-size 1s ease-in-out;
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: white;
+  background-size: 10% 100%; /* Initially hide the gradient */
+  transition: background-size 2s ease-in-out; /* Smooth transition for gradient reveal */
+  padding: 0.5vw;
 }
 
 /* Common Mask Style */
 .mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: width 1s ease-in-out;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 2s ease-in-out; /* Smooth transition for clipping */
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); Full rectangle initially */
+  z-index: 2;
 }
 
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* opacity: 0.3; */
-    transition: opacity 1s ease-in-out;
-    z-index: 1;
-}
-.text{
-    color: white;
-}
-/* Individual Card Styles */
-.text1 {
-    background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+
+  transition: opacity 2s ease-in-out; /* Smooth transition for opacity */
+  z-index: 1;
+  opacity: 1; /* Initial state */
 }
 
-.card1 .mask {
-    background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
-    /* opacity: 0.5; */
+.text {
+  color: white;
 }
 
-.text2 {
-    background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
-    /* color: white; */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card2 .mask {
-    background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
-}
-
-.text3{
-    background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card3 .mask {
-    background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
-}
-
-.text4 {
-    background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card4 .mask {
-    background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
-}
-
-.text5{
-    background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card5 .mask {
-    background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
-}
-
-/* Shrink Effect */
 .card.shrink .mask {
-    width: 10%;
+  width: 8%;
 }
 
 .card.shrink .background-image {
-    opacity: 1;
+  opacity: 0.6; /* Dim the background when shrinking */
 }
 
 .card.shrink .text-overlay h2 {
-    background-size: 100% 100%; /* Expand gradient to cover the text */
+  background-size: 100% 100%; /* Expand gradient to cover the text */
+  opacity: 0.6; /* Smooth fading of text */
 }
+
+/* Individual Card Styles */
+.text1 {
+  background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card1 .mask {
+  background: linear-gradient(207.16deg, #00F1FF 0.34%, #790A83 82.65%);
+}
+
+.text2 {
+  background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card2 .mask {
+  background: linear-gradient(206.88deg, #210379 12.71%, #FF5900 90.63%);
+}
+
+.text3 {
+  background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card3 .mask {
+  background: linear-gradient(207.56deg, #1DE370 0.34%, #572209 75.58%);
+}
+
+.text4 {
+  background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card4 .mask {
+  background: linear-gradient(207.75deg, #084656 10.21%, #DB5254 91.03%);
+}
+
+.text5 {
+  background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card5 .mask {
+  background: linear-gradient(205.58deg, #D7C504 10.19%, #B50093 90.49%);
+}
+
+/* Border Box for Arrow */
+.border_box {
+  border: 2px solid white;
+  position: absolute;
+  top: 37vw;
+  left: 16vw;
+  border-radius: 50%;
+  padding: 0.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.border_box img {
+  width: 1.7vw;
+  height: 1.7vw;
+}
+
+/* Hover Effects */
+.card:hover {
+  transition: all 0.6s ease-in-out;
+}
+
+.card.shrink:hover {
+  transition: all 0.6s ease-in-out;
+}
+
